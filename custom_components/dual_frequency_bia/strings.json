@@ -1,0 +1,97 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "User Profile",
+        "description": "Enter the profile information for the person using the scale.",
+        "data": {
+          "name": "Name",
+          "birthday": "Date of birth",
+          "gender": "Gender",
+          "height": "Height",
+          "profile_id": "Scale profile ID (1-16, optional)"
+        },
+        "data_description": {
+          "profile_id": "If the scale identifies multiple users, set this to match the person's profile number on the scale."
+        }
+      },
+      "sensors": {
+        "title": "Source Sensors",
+        "description": "Select the sensors from your Xiaomi scale that provide measurement data.",
+        "data": {
+          "sensor_weight": "Weight sensor",
+          "sensor_impedance_high": "Impedance 250kHz sensor (high frequency)",
+          "sensor_impedance_low": "Impedance 50kHz sensor (low frequency)",
+          "sensor_heart_rate": "Heart rate sensor (optional)",
+          "sensor_profile_id": "Profile ID sensor (optional)"
+        },
+        "data_description": {
+          "sensor_impedance_high": "The 250kHz impedance measures total body water.",
+          "sensor_impedance_low": "The 50kHz impedance measures extracellular water.",
+          "sensor_profile_id": "Required if profile ID is set above, to gate measurements to the correct person."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "bmi": {
+        "name": "BMI"
+      },
+      "basal_metabolism": {
+        "name": "Basal metabolism"
+      },
+      "visceral_fat": {
+        "name": "Visceral fat"
+      },
+      "ideal_weight": {
+        "name": "Ideal weight"
+      },
+      "total_body_water": {
+        "name": "Total body water"
+      },
+      "extracellular_water": {
+        "name": "Extracellular water"
+      },
+      "intracellular_water": {
+        "name": "Intracellular water"
+      },
+      "fat_free_mass": {
+        "name": "Fat-free mass"
+      },
+      "body_fat": {
+        "name": "Body fat"
+      },
+      "lean_body_mass": {
+        "name": "Lean body mass"
+      },
+      "water_percentage": {
+        "name": "Water"
+      },
+      "bone_mass": {
+        "name": "Bone mass"
+      },
+      "muscle_mass": {
+        "name": "Muscle mass"
+      },
+      "metabolic_age": {
+        "name": "Metabolic age"
+      },
+      "protein": {
+        "name": "Protein"
+      },
+      "body_score": {
+        "name": "Body score"
+      },
+      "ecw_tbw_ratio": {
+        "name": "ECW/TBW ratio"
+      },
+      "ecw_tbw_status": {
+        "name": "ECW/TBW status"
+      },
+      "heart_rate": {
+        "name": "Heart rate"
+      }
+    }
+  }
+}

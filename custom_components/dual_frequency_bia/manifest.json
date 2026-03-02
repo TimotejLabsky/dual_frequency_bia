@@ -1,0 +1,10 @@
+{
+  "domain": "dual_frequency_bia",
+  "name": "Dual Frequency BIA",
+  "codeowners": ["@TimotejLabsky"],
+  "config_flow": true,
+  "documentation": "https://github.com/TimotejLabsky/dual_frequency_bia",
+  "integration_type": "hub",
+  "iot_class": "calculated",
+  "version": "0.1.0"
+}
