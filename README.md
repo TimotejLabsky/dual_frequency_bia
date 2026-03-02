@@ -82,6 +82,8 @@ The ECW/TBW ratio is a clinically meaningful indicator:
 
 | Range | Status | Meaning |
 |-------|--------|---------|
-| < 0.36 | Low | Unusual, may indicate dehydration |
-| 0.36 - 0.40 | Normal | Healthy fluid distribution |
-| > 0.40 | High | May indicate edema or fluid retention |
+| < 0.38 | Low | Very muscular / high ICW |
+| 0.38 - 0.45 | Normal | Healthy fluid distribution |
+| > 0.45 | High | May indicate edema or fluid retention |
+
+> **Note:** These thresholds are calibrated for the Sun 2003 + Kyle 2004 equation pair, which structurally produces ratios of 0.40-0.44 for healthy adults. InBody devices use tighter ranges (0.36-0.39) based on their proprietary algorithms — those values are not comparable.

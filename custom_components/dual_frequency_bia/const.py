@@ -46,9 +46,11 @@ ECW_FEMALE_AGE = 0.023
 # FFM hydration constant (Wang et al. 1999)
 FFM_HYDRATION = 0.73
 
-# ECW/TBW ratio normal range
-ECW_TBW_RATIO_LOW = 0.36
-ECW_TBW_RATIO_HIGH = 0.40
+# ECW/TBW ratio normal range (calibrated for Sun 2003 + Kyle 2004 equation pair)
+# These equations structurally produce ratios of 0.40-0.44 for healthy adults.
+# InBody uses 0.36-0.39 but those thresholds are specific to their proprietary algorithms.
+ECW_TBW_RATIO_LOW = 0.38
+ECW_TBW_RATIO_HIGH = 0.45
 
 # --- Derived metric coefficients ---
 
