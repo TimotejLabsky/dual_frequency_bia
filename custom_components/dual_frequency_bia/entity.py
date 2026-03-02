@@ -23,13 +23,14 @@ class DualFrequencyBIAEntity:
         """Initialize the entity."""
         self._handler = handler
         self._metric = metric
+        self._entry_id = entry_id
         self._attr_unique_id = f"{entry_id}_{metric.value}"
 
     @property
     def device_info(self) -> DeviceInfo:
         """Return device info to group all sensors under one device."""
         return DeviceInfo(
-            identifiers={(DOMAIN, self._attr_unique_id.rsplit("_", 1)[0])},
+            identifiers={(DOMAIN, self._entry_id)},
             name=f"{self._handler.profile.name} Body Composition",
             manufacturer="Dual Frequency BIA",
             model="Dual-Frequency BIA",
